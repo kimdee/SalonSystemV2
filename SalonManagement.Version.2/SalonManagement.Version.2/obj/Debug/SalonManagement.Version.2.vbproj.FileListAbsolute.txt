@@ -1,0 +1,168 @@
+c:\users\theglitch\documents\visual studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\SalonManagement.Version.2.exe.config
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version.2.vbprojResolveAssemblyReference.cache
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmConnection.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmLogin.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.Resources.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version.2.vbproj.GenerateResource.Cache
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version.2.xml
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\SalonManagement.Version.2.exe
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\SalonManagement.Version.2.pdb
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\SalonManagement.Version.2.xml
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\Calendar.NET.dll
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\MaterialSkin.dll
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\MetroFramework.dll
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\MySql.Data.dll
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version.2.exe
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version.2.pdb
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddAccount.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEditAccount.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmManageAccount.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmMyProfile.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddAppointment.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddServices.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAppointment.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEditAppointment.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmSearchAppointment.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmSearchCustomer.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddDeduction.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEditDeduction.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmDeduction.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddEmployee.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEmployee.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEmployeeDeduction.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmSearchEmployee.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmServices.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmPosition.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddEmployeePayroll.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmPayroll.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddPayments.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEmployeeServe.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.ErrorMessage.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmMain.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddManualTimein.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAttendance.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAttendanceInfo.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAttendanceTimein.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmBrowseEmployee.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEditManualTimein.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmReadPasscode.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmCollection.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddCustomer.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmCustomer.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.OKMessage.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.YNMessage.resources
+C:\Users\TheGlitch\Documents\Visual Studio 2015\Projects\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEditService.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\SalonManagement.Version.2.exe.config
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version.2.exe
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version.2.xml
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version.2.pdb
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\SalonManagement.Version.2.exe
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\SalonManagement.Version.2.pdb
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\SalonManagement.Version.2.xml
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version.2.vbprojResolveAssemblyReference.cache
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddAccount.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEditAccount.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmManageAccount.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmMyProfile.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddAppointment.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddServices.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAppointment.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEditAppointment.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmSearchAppointment.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmSearchCustomer.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddDeduction.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEditDeduction.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmDeduction.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddEmployee.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEmployee.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEmployeeDeduction.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmSearchEmployee.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEditService.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmServices.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmPosition.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddEmployeePayroll.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmPayroll.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddPayments.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEmployeeServe.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.ErrorMessage.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmMain.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmConnection.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmLogin.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.Resources.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddManualTimein.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAttendance.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAttendanceInfo.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAttendanceTimein.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmBrowseEmployee.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEditManualTimein.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmReadPasscode.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmCollection.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddCustomer.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmCustomer.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.OKMessage.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.YNMessage.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version.2.vbproj.GenerateResource.Cache
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddService.resources
+C:\Users\PETER\Desktop\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmHelp.resources
+F:\Kim\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\SalonManagement.Version.2.exe.config
+F:\Kim\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version.2.exe
+F:\Kim\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version.2.xml
+F:\Kim\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version.2.pdb
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\SalonManagement.Version.2.exe.config
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version.2.exe
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version.2.xml
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version.2.pdb
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\SalonManagement.Version.2.exe
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\SalonManagement.Version.2.pdb
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\SalonManagement.Version.2.xml
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\Calendar.NET.dll
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\MaterialSkin.dll
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\MetroFramework.dll
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\bin\Debug\MySql.Data.dll
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version.2.vbprojResolveAssemblyReference.cache
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddAccount.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEditAccount.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmManageAccount.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmMyProfile.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddAppointment.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddServices.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAppointment.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEditAppointment.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmSearchAppointment.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmSearchCustomer.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddDeduction.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEditDeduction.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmDeduction.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddEmployee.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEmployee.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmHelp.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEmployeeDeduction.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmSearchEmployee.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddService.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEditService.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmServices.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmPosition.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddEmployeePayroll.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmPayroll.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddPayments.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEmployeeServe.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.ErrorMessage.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmMain.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmConnection.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmLogin.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.Resources.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddManualTimein.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAttendance.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAttendanceInfo.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAttendanceTimein.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmBrowseEmployee.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmEditManualTimein.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmReadPasscode.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmCollection.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmAddCustomer.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.frmCustomer.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.OKMessage.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version._2.YNMessage.resources
+C:\Users\TheGlitch\Desktop\Kim Files\10-29-2019\SalonManagement.Version.2\SalonManagement.Version.2\obj\Debug\SalonManagement.Version.2.vbproj.GenerateResource.Cache
