@@ -122,7 +122,7 @@
     End Sub
 
     Private Sub timerWalkin_Tick(sender As Object, e As EventArgs) Handles timerWalkin.Tick
-        lblTimeNow.Text = dtServer.ToString("hh:mm:ss tt")
+        lblTimeNow.Text = dtServer.ToString("h:mm tt")
         lblDateNow.Text = dtServer.ToShortDateString
     End Sub
 
@@ -130,8 +130,12 @@
         DisableInput(Me)
         ResetButton()
         timerWalkin.Start()
+
         add = True
         edit = True
+
+        dtpDate.Value = dtServer.ToShortDateString
+        dtpTime.Value = dtServer.ToString("h:mm tt")
     End Sub
 
     Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
@@ -158,9 +162,12 @@
                 End If
             End With
             btnNewCustomer.Text = "Edit Customer"
+
+            OnActionButton()
+            btnClose.Text = "Cancel"
         End If
 
-
+        gvView.Rows.Clear()
 
         EnableInput(Me)
         txtName.Enabled = False
@@ -168,15 +175,10 @@
         rdbFemale.Enabled = False
         txtCN.Enabled = False
 
-        OnActionButton()
 
-        gvView.Rows.Clear()
-        btnClose.Text = "Cancel"
     End Sub
 
     Private Sub btnBrowseCustomer_Click(sender As Object, e As EventArgs) Handles btnBrowseCustomer.Click
-        OnActionButton()
-
         gvView.Rows.Clear()
         ClearInput(Me)
 
@@ -185,9 +187,6 @@
         rdbMale.Enabled = False
         rdbFemale.Enabled = False
         txtCN.Enabled = False
-
-
-        btnClose.Text = "Cancel"
 
         Dim obj As New frmSearchCustomer
         obj.customer = Me.customer
@@ -210,11 +209,13 @@
                     txtCN.Text = .CustomerCN
                 End With
                 btnNewCustomer.Text = "Edit Customer"
+
+                OnActionButton()
+                btnClose.Text = "Cancel"
             Catch ex As Exception
                 MsgBox(ex.Message)
             End Try
         End If
-
     End Sub
 
     ''Total Amount Count
@@ -271,6 +272,9 @@
     End Sub
     Public Sub doAdd()
         Try
+            customer.AddCustomer()
+            customer.SetCustomerID()
+
             ''Instert AppointmentTable
             For Each r As DataGridViewRow In gvView.Rows
                 With appointment
@@ -285,8 +289,8 @@
                         .AppointmentDate = lblDateNow.Text
                     ElseIf rdbReservation.Checked = True Then
                         .AppointmentType = "Reservation"
-                        .AppointmentTime = dtpTime.Value.TimeOfDay.ToString
-                        .AppointmentDate = dtpDate.Value.ToString
+                        .AppointmentTime = dtpTime.Value.ToString("t")
+                        .AppointmentDate = dtpDate.Value.ToString("d")
                     End If
                     .AppointmentStatus = "Not Paid"
                     .AppointmentTotalAmount = nudTotalAmount.Value.ToString
@@ -302,15 +306,18 @@
                             If obj.ShowDialog = DialogResult.OK Then
 
                             End If
-                        ElseIf MessageBox.Show("Appointment Save", "Message", MessageBoxButtons.OK, MessageBoxIcon.Question) = DialogResult.No Then
+                        ElseIf MessageBox.Show("Appointment Save", "Message", MessageBoxButtons.OK, MessageBoxIcon.Question) = DialogResult.OK Then
                             OnDone()
+                            ResetButton()
                             ClearInput(Me)
                             DisableInput(Me)
-                            gvView.Rows.Clear()
-                            Me.Close()
 
-                            btnPayments.Enabled = True
-                            btnEdit.Enabled = True
+                            gvView.Rows.Clear()
+                            rdbMale.Checked = True
+                            rdbWalkin.Checked = True
+
+                            btnClose.Text = "Close"
+                            btnNewCustomer.Text = "New Customer"
                         End If
                     Else
                         Dim err As ErrorMessage
@@ -381,13 +388,24 @@
     End Sub
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
-        If add = True Then
-            customer.AddCustomer()
-            customer.SetCustomerID()
-            doAdd()
-        ElseIf edit = True Then
-            doEdit()
+        If gvView.Rows.Count = 0 And dtpDate.Value.ToString < dtpDate.Value.ToString Then
+            MessageBox.Show("Please check your date and services", "Message",
+                             MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        ElseIf gvView.Rows.Count = 0 Then
+            MessageBox.Show("Please add service.", "Message",
+                              MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        ElseIf dtpDate.Value.ToString < dtpDate.Value.ToString Then
+            MessageBox.Show("Please check your date", "Message",
+                              MessageBoxButtons.OK, MessageBoxIcon.Warning)
+
+        Else
+            If add = True Then
+                doAdd()
+            ElseIf edit = True Then
+                doEdit()
+            End If
         End If
+
     End Sub
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
@@ -447,9 +465,5 @@
 
         lblTimeNow.Hide()
         lblDateNow.Hide()
-    End Sub
-
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
     End Sub
 End Class

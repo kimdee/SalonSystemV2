@@ -166,7 +166,7 @@ Public Class frmLogin
 
     Private Sub txtUsername_LostFocus(sender As Object, e As EventArgs) Handles txtUsername.LostFocus
         If txtUsername.Text = "" Then
-            txtUsername.ForeColor = Color.White
+            txtUsername.ForeColor = Color.Gray
             txtUsername.Text = "Username"
         End If
     End Sub
@@ -181,7 +181,7 @@ Public Class frmLogin
 
     Private Sub txtPassword_LostFocus(sender As Object, e As EventArgs) Handles txtPassword.LostFocus
         If txtPassword.Text = "" Then
-            txtPassword.ForeColor = Color.White
+            txtPassword.ForeColor = Color.Gray
             txtPassword.Text = "Password"
             txtPassword.PasswordChar = ""
         End If

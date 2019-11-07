@@ -176,6 +176,82 @@ Public Class Attendance
         End Try
     End Sub
 
+    Public Sub ViewAttendanceDashboard(gv As DataGridView)
+        Try
+            Dim i As Integer = 1
+            Dim sql As String = "SELECT * FROM attendance INNER JOIN employee ON attendance.employeeID = employee.employeeID ORDER BY attendanceDate ASC LIMIT 100;"
+            gv.Rows.Clear()
+            IsConnected()
+            Dim cmd = New MySqlCommand(sql, getServerConnection())
+            Dim reader As MySqlDataReader = cmd.ExecuteReader()
+            While reader.Read()
+                With gv
+                    If reader(3) = reader(3) And reader(4) = "" And reader(5) = "" And reader(6) = "" Then
+                        Dim offHrsWork As Integer = 8
+                        Dim underTime As Integer = 0
+                        Dim HrsWork As Integer = 0
+                        Dim OT As Integer = 0
+                        .Rows.Add(reader(0), i.ToString(), reader("employeeLN") + ", " + reader("employeeFN") + " " + reader("employeeMN"),
+                            Date.Parse(reader(2)).ToShortDateString, reader(3), reader(4), reader(5), reader(6), offHrsWork, HrsWork, OT, underTime,
+                            reader(7), "Manual Update")
+
+                    ElseIf reader(3) = reader(3) And reader(4) = reader(4) And reader(5) = "" And reader(6) = "" Then
+                        Dim offHrsWork As Integer = 8
+                        Dim HrsWork As Integer = DateDiff(DateInterval.Hour, reader(3), reader(4))
+                        Dim OT As Integer = 0
+
+                        Dim underTime As Integer
+                        If HrsWork < offHrsWork Then
+                            underTime = offHrsWork - HrsWork
+                        End If
+
+
+                        .Rows.Add(reader(0), i.ToString(), reader("employeeLN") + ", " + reader("employeeFN") + " " + reader("employeeMN"),
+                              Date.Parse(reader(2)).ToShortDateString, reader(3), reader(4), reader(5), reader(6), offHrsWork, HrsWork, OT, underTime,
+                               reader(7), "Manual Update")
+
+                    ElseIf reader(3) = reader(3) And reader(4) = reader(4) And reader(5) = reader(5) And reader(6) = "" Then
+                        Dim offHrsWork As Integer = 8
+                        Dim HrsWork As Integer = DateDiff(DateInterval.Hour, reader(3), reader(4))
+                        Dim OT As Integer = 0
+
+                        Dim underTime As Integer
+                        If HrsWork < offHrsWork Then
+                            underTime = offHrsWork - HrsWork
+                        End If
+
+                        .Rows.Add(reader(0), i.ToString(), reader("employeeLN") + ", " + reader("employeeFN") + " " + reader("employeeMN"),
+                              Date.Parse(reader(2)).ToShortDateString, reader(3), reader(4), reader(5), reader(6), offHrsWork, HrsWork, OT, underTime,
+                              reader(7), "Manual Update")
+
+                    ElseIf reader(3) = reader(3) And reader(4) = reader(4) And reader(5) = reader(5) And reader(6) = reader(6) Then
+                        Dim offHrsWork As Integer = 8
+                        Dim HrsWork As Integer = DateDiff(DateInterval.Hour, reader(3), reader(6))
+
+                        Dim OT As Integer
+                        If HrsWork > offHrsWork Then
+                            OT = HrsWork - offHrsWork
+                        End If
+
+                        Dim underTime As Integer
+                        If HrsWork < offHrsWork Then
+                            underTime = offHrsWork - HrsWork
+                        End If
+
+                        .Rows.Add(reader(0), i.ToString(), reader("employeeLN") + ", " + reader("employeeFN") + " " + reader("employeeMN"),
+                             Date.Parse(reader(2)).ToShortDateString, reader(3), reader(4), reader(5), reader(6), offHrsWork, HrsWork, OT, underTime,
+                              reader(7), "Manual Update")
+                    End If
+                    i = i + 1
+                End With
+            End While
+            reader.Close()
+            gv.ClearSelection()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
     Public Sub ViewAttendance(gv As DataGridView)
         Try
             Dim i As Integer = 1

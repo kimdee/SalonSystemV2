@@ -6,7 +6,6 @@
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         Dim obj As New frmAddAccount
-        obj.ShowDialog()
         If obj.ShowDialog() = DialogResult.OK Then
             account.ViewAccounts(gvView, lblResult)
         Else

@@ -1,4 +1,7 @@
 ﻿Imports System.Windows.Forms
+Imports MySql.Data.MySqlClient
+Imports MySql.Data
+
 Public Class frmAddEmployee
 
     Private employee As New Employee
@@ -13,7 +16,6 @@ Public Class frmAddEmployee
 
     Dim gender As String = "Male"
     Private Sub frmEmployee_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'cboPosition.SelectedIndex = 0
         DisableInput(Me)
     End Sub
 
@@ -309,7 +311,9 @@ Public Class frmAddEmployee
         txtOT.Enabled = False
 
         OnActionButton()
+
         position.LoadPositionToCBO(cboPosition)
+
         add = True
         edit = True
         deleteExprtise.Clear()
@@ -403,10 +407,7 @@ Public Class frmAddEmployee
 
     Private Sub cboPosition_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboPosition.SelectedIndexChanged
         With position
-            .SetServiceDetails(.PositionID)
-            txtStandardPay.Text = .PositionStandardPay
-            txtOT.Text = .PositionOvertime
-            txtBasicPays.Text = .PositionBasicPay
+            .LoadPositionCboTextBox(cboPosition, txtStandardPay, txtOT, txtBasicPays)
         End With
     End Sub
 

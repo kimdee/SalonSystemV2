@@ -44,10 +44,10 @@ Partial Class frmAddServices
         Me.panelMain.Controls.Add(Me.btnAddService)
         Me.panelMain.Controls.Add(Me.btnClose)
         Me.panelMain.Controls.Add(Me.panelGv)
-        Me.panelMain.Location = New System.Drawing.Point(15, 95)
-        Me.panelMain.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.panelMain.Location = New System.Drawing.Point(11, 77)
+        Me.panelMain.Margin = New System.Windows.Forms.Padding(2)
         Me.panelMain.Name = "panelMain"
-        Me.panelMain.Size = New System.Drawing.Size(533, 553)
+        Me.panelMain.Size = New System.Drawing.Size(400, 449)
         Me.panelMain.TabIndex = 1
         '
         'btnAddService
@@ -56,10 +56,10 @@ Partial Class frmAddServices
         Me.btnAddService.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAddService.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
         Me.btnAddService.ForeColor = System.Drawing.Color.White
-        Me.btnAddService.Location = New System.Drawing.Point(196, 500)
-        Me.btnAddService.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnAddService.Location = New System.Drawing.Point(147, 406)
+        Me.btnAddService.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAddService.Name = "btnAddService"
-        Me.btnAddService.Size = New System.Drawing.Size(163, 39)
+        Me.btnAddService.Size = New System.Drawing.Size(122, 32)
         Me.btnAddService.TabIndex = 31
         Me.btnAddService.Text = "OK"
         Me.btnAddService.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -69,11 +69,11 @@ Partial Class frmAddServices
         '
         Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClose.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.btnClose.ForeColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.btnClose.Location = New System.Drawing.Point(364, 500)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnClose.ForeColor = System.Drawing.Color.Black
+        Me.btnClose.Location = New System.Drawing.Point(273, 406)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(2)
         Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(163, 39)
+        Me.btnClose.Size = New System.Drawing.Size(122, 32)
         Me.btnClose.TabIndex = 30
         Me.btnClose.Text = "Cancel"
         Me.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -85,10 +85,10 @@ Partial Class frmAddServices
         Me.panelGv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.panelGv.Controls.Add(Me.gvView)
         Me.panelGv.Font = New System.Drawing.Font("Segoe UI", 15.0!)
-        Me.panelGv.Location = New System.Drawing.Point(3, 2)
-        Me.panelGv.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.panelGv.Location = New System.Drawing.Point(2, 2)
+        Me.panelGv.Margin = New System.Windows.Forms.Padding(2)
         Me.panelGv.Name = "panelGv"
-        Me.panelGv.Size = New System.Drawing.Size(527, 492)
+        Me.panelGv.Size = New System.Drawing.Size(396, 400)
         Me.panelGv.TabIndex = 29
         '
         'gvView
@@ -108,13 +108,13 @@ Partial Class frmAddServices
         Me.gvView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.gvView.EnableHeadersVisualStyles = False
         Me.gvView.Location = New System.Drawing.Point(0, 0)
-        Me.gvView.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.gvView.Margin = New System.Windows.Forms.Padding(2)
         Me.gvView.Name = "gvView"
         Me.gvView.ReadOnly = True
         Me.gvView.RowHeadersVisible = False
         Me.gvView.RowTemplate.Height = 24
         Me.gvView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.gvView.Size = New System.Drawing.Size(525, 490)
+        Me.gvView.Size = New System.Drawing.Size(394, 398)
         Me.gvView.TabIndex = 26
         '
         'Column1
@@ -167,25 +167,26 @@ Partial Class frmAddServices
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 25.0!)
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(117, 11)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(88, 9)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(274, 57)
+        Me.Label3.Size = New System.Drawing.Size(222, 46)
         Me.Label3.TabIndex = 17
         Me.Label3.Text = "ADD SERVICE"
         '
         'frmAddServices
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(563, 661)
+        Me.ClientSize = New System.Drawing.Size(422, 537)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.panelMain)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmAddServices"
+        Me.Sizable = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.panelMain.ResumeLayout(False)
         Me.panelGv.ResumeLayout(False)

@@ -23,7 +23,7 @@ Partial Class frmLogin
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmLogin))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.txtUsername = New System.Windows.Forms.TextBox()
@@ -63,10 +63,10 @@ Partial Class frmLogin
         Me.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BunifuTransition.SetDecoration(Me.txtUsername, BunifuAnimatorNS.DecorationType.None)
         Me.txtUsername.Font = New System.Drawing.Font("Segoe UI Semibold", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.txtUsername.ForeColor = System.Drawing.Color.White
+        Me.txtUsername.ForeColor = System.Drawing.Color.Gray
         Me.txtUsername.Location = New System.Drawing.Point(89, 172)
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(223, 34)
+        Me.txtUsername.Size = New System.Drawing.Size(223, 27)
         Me.txtUsername.TabIndex = 1
         Me.txtUsername.Text = "Username"
         '
@@ -77,10 +77,10 @@ Partial Class frmLogin
         Me.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BunifuTransition.SetDecoration(Me.txtPassword, BunifuAnimatorNS.DecorationType.None)
         Me.txtPassword.Font = New System.Drawing.Font("Segoe UI Semibold", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.txtPassword.ForeColor = System.Drawing.Color.White
+        Me.txtPassword.ForeColor = System.Drawing.Color.Gray
         Me.txtPassword.Location = New System.Drawing.Point(89, 214)
         Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(223, 34)
+        Me.txtPassword.Size = New System.Drawing.Size(223, 27)
         Me.txtPassword.TabIndex = 2
         Me.txtPassword.Text = "Password"
         '
@@ -95,7 +95,7 @@ Partial Class frmLogin
         Me.linkAttendance.LinkColor = System.Drawing.Color.White
         Me.linkAttendance.Location = New System.Drawing.Point(43, 302)
         Me.linkAttendance.Name = "linkAttendance"
-        Me.linkAttendance.Size = New System.Drawing.Size(128, 30)
+        Me.linkAttendance.Size = New System.Drawing.Size(108, 25)
         Me.linkAttendance.TabIndex = 4
         Me.linkAttendance.TabStop = True
         Me.linkAttendance.Text = "Attendance"
@@ -119,22 +119,22 @@ Partial Class frmLogin
         '
         Me.BunifuTransition.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide
         Me.BunifuTransition.Cursor = Nothing
-        Animation2.AnimateOnlyDifferences = True
-        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
-        Animation2.LeafCoeff = 0.0!
-        Animation2.MaxTime = 1.0!
-        Animation2.MinTime = 0.0!
-        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
-        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
-        Animation2.MosaicSize = 0
-        Animation2.Padding = New System.Windows.Forms.Padding(0)
-        Animation2.RotateCoeff = 0.0!
-        Animation2.RotateLimit = 0.0!
-        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
-        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
-        Animation2.TimeCoeff = 0.0!
-        Animation2.TransparencyCoeff = 0.0!
-        Me.BunifuTransition.DefaultAnimation = Animation2
+        Animation1.AnimateOnlyDifferences = True
+        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
+        Animation1.LeafCoeff = 0!
+        Animation1.MaxTime = 1.0!
+        Animation1.MinTime = 0!
+        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
+        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
+        Animation1.MosaicSize = 0
+        Animation1.Padding = New System.Windows.Forms.Padding(0)
+        Animation1.RotateCoeff = 0!
+        Animation1.RotateLimit = 0!
+        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
+        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
+        Animation1.TimeCoeff = 0!
+        Animation1.TransparencyCoeff = 0!
+        Me.BunifuTransition.DefaultAnimation = Animation1
         '
         'Label2
         '

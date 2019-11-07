@@ -18,6 +18,7 @@
 
     Private Sub gvViewWalkIn_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles gvView.CellContentClick
         If e.ColumnIndex = 9 Then
+            appointment.SetAppointmentDetails(gvView.SelectedRows(0).Cells(0).Value)
             If MessageBox.Show("Are you sure you want to delete customer " + customer.CustomerName, "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
                 If appointment.DeleteAppointment() = True Then
                     appointment.ViewAppointment(gvView)

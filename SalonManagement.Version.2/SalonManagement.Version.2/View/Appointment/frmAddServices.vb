@@ -13,6 +13,12 @@ Public Class frmAddServices
             Else
                 gvView.SelectedRows(0).Cells(1).Value = False
             End If
+        ElseIf gvView.SelectedRows.Count And gvView.SelectedRows.Count > 0 Then
+            If gvView.SelectedRows(0).Cells(1).Value = False Then
+                gvView.SelectedRows(0).Cells(1).Value = True
+            Else
+                gvView.SelectedRows(0).Cells(1).Value = False
+            End If
         End If
     End Sub
 

@@ -1,4 +1,8 @@
-﻿Public Class frmConnection
+﻿Imports MySql.Data.MySqlClient
+Imports MySql.Data
+
+Public Class frmConnection
+    Dim account As New Accounts
     Private Sub txtHost_TextChanged(sender As Object, e As EventArgs) Handles txtHost.TextChanged
         AllowedOnly(AlphaChar, txtHost)
     End Sub
@@ -32,7 +36,11 @@
                 My.Settings.Username = txtUserName.Text
                 My.Settings.Password = txtPw.Text
                 My.Settings.Save()
-                Me.Close()
+
+                Me.DialogResult = DialogResult.OK
+                Me.Hide()
+
+                frmMain.Show()
             End If
         Else
             MessageBox.Show("Connection failed. Please review connection fields.",
@@ -44,4 +52,11 @@
         Me.Close()
     End Sub
 
+    Private Sub frmConnection_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If My.Settings.IsRemembered = True Then
+            frmMain.Show()
+        Else
+            Me.Show()
+        End If
+    End Sub
 End Class

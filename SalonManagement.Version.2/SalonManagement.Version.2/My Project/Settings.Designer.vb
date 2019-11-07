@@ -61,7 +61,7 @@ Namespace My
                 Return CType(Me("Username"), String)
             End Get
             Set(value As String)
-                Me("Username") = Value
+                Me("Username") = value
             End Set
         End Property
 
@@ -73,7 +73,7 @@ Namespace My
                 Return CType(Me("ServerIP"), String)
             End Get
             Set(value As String)
-                Me("ServerIP") = Value
+                Me("ServerIP") = value
             End Set
         End Property
 
@@ -85,7 +85,7 @@ Namespace My
                 Return CType(Me("PortNo"), String)
             End Get
             Set(value As String)
-                Me("PortNo") = Value
+                Me("PortNo") = value
             End Set
         End Property
 
@@ -97,7 +97,7 @@ Namespace My
                 Return CType(Me("Password"), String)
             End Get
             Set(value As String)
-                Me("Password") = Value
+                Me("Password") = value
             End Set
         End Property
 
@@ -109,7 +109,7 @@ Namespace My
                 Return CType(Me("DatabaseName"), String)
             End Get
             Set(value As String)
-                Me("DatabaseName") = Value
+                Me("DatabaseName") = value
             End Set
         End Property
 
@@ -121,7 +121,7 @@ Namespace My
                 Return CType(Me("LogUser"), String)
             End Get
             Set(value As String)
-                Me("LogUser") = Value
+                Me("LogUser") = value
             End Set
         End Property
 
@@ -133,7 +133,7 @@ Namespace My
                 Return CType(Me("IsRemembered"), String)
             End Get
             Set(value As String)
-                Me("IsRemembered") = Value
+                Me("IsRemembered") = value
             End Set
         End Property
     End Class

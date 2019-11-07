@@ -25,6 +25,16 @@ Partial Class frmAppointment
         Me.panelMain = New System.Windows.Forms.Panel()
         Me.panelContianer = New System.Windows.Forms.Panel()
         Me.gvView = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column12 = New System.Windows.Forms.DataGridViewLinkColumn()
         Me.panelTop = New System.Windows.Forms.Panel()
         Me.panelbl = New System.Windows.Forms.Panel()
         Me.lblSearch = New System.Windows.Forms.Label()
@@ -44,16 +54,6 @@ Partial Class frmAppointment
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column12 = New System.Windows.Forms.DataGridViewLinkColumn()
         Me.panelMain.SuspendLayout()
         Me.panelContianer.SuspendLayout()
         CType(Me.gvView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -68,10 +68,9 @@ Partial Class frmAppointment
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.panelMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.panelMain.Controls.Add(Me.panelContianer)
-        Me.panelMain.Location = New System.Drawing.Point(4, 81)
-        Me.panelMain.Margin = New System.Windows.Forms.Padding(4)
+        Me.panelMain.Location = New System.Drawing.Point(3, 66)
         Me.panelMain.Name = "panelMain"
-        Me.panelMain.Size = New System.Drawing.Size(1257, 664)
+        Me.panelMain.Size = New System.Drawing.Size(943, 540)
         Me.panelMain.TabIndex = 14
         '
         'panelContianer
@@ -80,11 +79,11 @@ Partial Class frmAppointment
         Me.panelContianer.Controls.Add(Me.gvView)
         Me.panelContianer.Controls.Add(Me.panelTop)
         Me.panelContianer.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panelContianer.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.panelContianer.Font = New System.Drawing.Font("Segoe UI", 14.25!)
         Me.panelContianer.Location = New System.Drawing.Point(0, 0)
-        Me.panelContianer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.panelContianer.Margin = New System.Windows.Forms.Padding(2)
         Me.panelContianer.Name = "panelContianer"
-        Me.panelContianer.Size = New System.Drawing.Size(1255, 662)
+        Me.panelContianer.Size = New System.Drawing.Size(941, 538)
         Me.panelContianer.TabIndex = 1
         '
         'gvView
@@ -103,15 +102,85 @@ Partial Class frmAppointment
         Me.gvView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column11, Me.Column7, Me.Column8, Me.Column9, Me.Column10, Me.Column12})
         Me.gvView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.gvView.EnableHeadersVisualStyles = False
-        Me.gvView.Location = New System.Drawing.Point(0, 62)
-        Me.gvView.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.gvView.Location = New System.Drawing.Point(0, 50)
+        Me.gvView.Margin = New System.Windows.Forms.Padding(2)
         Me.gvView.Name = "gvView"
         Me.gvView.ReadOnly = True
         Me.gvView.RowHeadersVisible = False
         Me.gvView.RowTemplate.Height = 24
         Me.gvView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.gvView.Size = New System.Drawing.Size(1255, 600)
+        Me.gvView.Size = New System.Drawing.Size(941, 488)
         Me.gvView.TabIndex = 31
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = ""
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        Me.Column1.Visible = False
+        '
+        'Column2
+        '
+        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.Column2.HeaderText = "No."
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        Me.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Column2.Width = 35
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "Name"
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Service"
+        Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
+        Me.Column4.Visible = False
+        '
+        'Column11
+        '
+        Me.Column11.HeaderText = "Total Amount"
+        Me.Column11.Name = "Column11"
+        Me.Column11.ReadOnly = True
+        '
+        'Column7
+        '
+        Me.Column7.HeaderText = "Time"
+        Me.Column7.Name = "Column7"
+        Me.Column7.ReadOnly = True
+        '
+        'Column8
+        '
+        Me.Column8.HeaderText = "Date"
+        Me.Column8.Name = "Column8"
+        Me.Column8.ReadOnly = True
+        '
+        'Column9
+        '
+        Me.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.Column9.HeaderText = "Appointment Type"
+        Me.Column9.Name = "Column9"
+        Me.Column9.ReadOnly = True
+        Me.Column9.Width = 200
+        '
+        'Column10
+        '
+        Me.Column10.HeaderText = "Status"
+        Me.Column10.Name = "Column10"
+        Me.Column10.ReadOnly = True
+        '
+        'Column12
+        '
+        Me.Column12.ActiveLinkColor = System.Drawing.Color.Crimson
+        Me.Column12.HeaderText = ""
+        Me.Column12.LinkColor = System.Drawing.Color.Crimson
+        Me.Column12.Name = "Column12"
+        Me.Column12.ReadOnly = True
+        Me.Column12.VisitedLinkColor = System.Drawing.Color.Crimson
         '
         'panelTop
         '
@@ -120,9 +189,8 @@ Partial Class frmAppointment
         Me.panelTop.Controls.Add(Me.txtSearch)
         Me.panelTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.panelTop.Location = New System.Drawing.Point(0, 0)
-        Me.panelTop.Margin = New System.Windows.Forms.Padding(4)
         Me.panelTop.Name = "panelTop"
-        Me.panelTop.Size = New System.Drawing.Size(1255, 62)
+        Me.panelTop.Size = New System.Drawing.Size(941, 50)
         Me.panelTop.TabIndex = 30
         '
         'panelbl
@@ -131,10 +199,9 @@ Partial Class frmAppointment
         Me.panelbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.panelbl.Controls.Add(Me.lblSearch)
         Me.panelbl.Font = New System.Drawing.Font("Segoe UI", 14.0!)
-        Me.panelbl.Location = New System.Drawing.Point(1143, 10)
-        Me.panelbl.Margin = New System.Windows.Forms.Padding(4)
+        Me.panelbl.Location = New System.Drawing.Point(857, 8)
         Me.panelbl.Name = "panelbl"
-        Me.panelbl.Size = New System.Drawing.Size(107, 39)
+        Me.panelbl.Size = New System.Drawing.Size(81, 32)
         Me.panelbl.TabIndex = 43
         '
         'lblSearch
@@ -142,9 +209,8 @@ Partial Class frmAppointment
         Me.lblSearch.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblSearch.Font = New System.Drawing.Font("Segoe UI", 14.0!)
         Me.lblSearch.Location = New System.Drawing.Point(0, 0)
-        Me.lblSearch.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSearch.Name = "lblSearch"
-        Me.lblSearch.Size = New System.Drawing.Size(105, 37)
+        Me.lblSearch.Size = New System.Drawing.Size(79, 30)
         Me.lblSearch.TabIndex = 42
         Me.lblSearch.Text = "Search"
         '
@@ -153,11 +219,11 @@ Partial Class frmAppointment
         Me.btnAddAppointment.BackColor = System.Drawing.Color.Transparent
         Me.btnAddAppointment.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAddAppointment.Font = New System.Drawing.Font("Segoe UI", 17.0!)
-        Me.btnAddAppointment.ForeColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.btnAddAppointment.Location = New System.Drawing.Point(9, 6)
-        Me.btnAddAppointment.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnAddAppointment.ForeColor = System.Drawing.Color.Black
+        Me.btnAddAppointment.Location = New System.Drawing.Point(7, 5)
+        Me.btnAddAppointment.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAddAppointment.Name = "btnAddAppointment"
-        Me.btnAddAppointment.Size = New System.Drawing.Size(305, 48)
+        Me.btnAddAppointment.Size = New System.Drawing.Size(229, 39)
         Me.btnAddAppointment.TabIndex = 26
         Me.btnAddAppointment.Text = "New Appointment"
         Me.btnAddAppointment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -170,10 +236,10 @@ Partial Class frmAppointment
         Me.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtSearch.Font = New System.Drawing.Font("Segoe UI", 14.0!)
         Me.txtSearch.ForeColor = System.Drawing.Color.Gray
-        Me.txtSearch.Location = New System.Drawing.Point(775, 10)
-        Me.txtSearch.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtSearch.Location = New System.Drawing.Point(581, 8)
+        Me.txtSearch.Margin = New System.Windows.Forms.Padding(2)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(367, 39)
+        Me.txtSearch.Size = New System.Drawing.Size(276, 32)
         Me.txtSearch.TabIndex = 42
         Me.txtSearch.Text = "Search Customer"
         '
@@ -266,92 +332,23 @@ Partial Class frmAppointment
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(351, 11)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(263, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(517, 48)
+        Me.Label1.Size = New System.Drawing.Size(422, 39)
         Me.Label1.TabIndex = 15
         Me.Label1.Text = "MANAGE APPOINTMENT"
         '
-        'Column1
-        '
-        Me.Column1.HeaderText = ""
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        Me.Column1.Visible = False
-        '
-        'Column2
-        '
-        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.Column2.HeaderText = "No."
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        Me.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Column2.Width = 35
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "Name"
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "Service"
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
-        Me.Column4.Visible = False
-        '
-        'Column11
-        '
-        Me.Column11.HeaderText = "Total Amount"
-        Me.Column11.Name = "Column11"
-        Me.Column11.ReadOnly = True
-        '
-        'Column7
-        '
-        Me.Column7.HeaderText = "Time"
-        Me.Column7.Name = "Column7"
-        Me.Column7.ReadOnly = True
-        '
-        'Column8
-        '
-        Me.Column8.HeaderText = "Date"
-        Me.Column8.Name = "Column8"
-        Me.Column8.ReadOnly = True
-        '
-        'Column9
-        '
-        Me.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.Column9.HeaderText = "Appointment Type"
-        Me.Column9.Name = "Column9"
-        Me.Column9.ReadOnly = True
-        Me.Column9.Width = 200
-        '
-        'Column10
-        '
-        Me.Column10.HeaderText = "Status"
-        Me.Column10.Name = "Column10"
-        Me.Column10.ReadOnly = True
-        '
-        'Column12
-        '
-        Me.Column12.ActiveLinkColor = System.Drawing.Color.Crimson
-        Me.Column12.HeaderText = ""
-        Me.Column12.LinkColor = System.Drawing.Color.Crimson
-        Me.Column12.Name = "Column12"
-        Me.Column12.ReadOnly = True
-        Me.Column12.VisitedLinkColor = System.Drawing.Color.Crimson
-        '
         'frmAppointment
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1267, 750)
+        Me.AutoSize = True
+        Me.ClientSize = New System.Drawing.Size(950, 609)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.panelMain)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmAppointment"
+        Me.Sizable = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.panelMain.ResumeLayout(False)

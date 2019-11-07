@@ -41,9 +41,9 @@ Public Class Appointment
         End Get
     End Property
 
-    Private _appointmentDate As Date
-    Public Property AppointmentDate As Date
-        Set(value As Date)
+    Private _appointmentDate As String
+    Public Property AppointmentDate As String
+        Set(value As String)
             _appointmentDate = value
         End Set
         Get
@@ -150,7 +150,7 @@ Public Class Appointment
     Public Function DeleteAppointment() As Boolean
         Try
             Dim bool As Boolean = False
-            Dim sql As String = "DELETE * FROM Appointment WHERE appointmentID=@0;"
+            Dim sql As String = "DELETE FROM Appointment WHERE appointmentID=@0;"
             If IsConnected() = True Then
                 ServerExecuteSQL(sql, AppointmentID)
                 Commit()

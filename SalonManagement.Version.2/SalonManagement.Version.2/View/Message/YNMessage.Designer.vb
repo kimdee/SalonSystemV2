@@ -35,6 +35,7 @@ Partial Class YNMessage
         '
         'panelMain
         '
+        Me.panelMain.BackColor = System.Drawing.Color.White
         Me.panelMain.Controls.Add(Me.btnYes)
         Me.panelMain.Controls.Add(Me.lblMsg)
         Me.panelMain.Controls.Add(Me.Panel2)
@@ -49,7 +50,7 @@ Partial Class YNMessage
         'btnYes
         '
         Me.btnYes.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnYes.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnYes.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.btnYes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnYes.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold)
         Me.btnYes.ForeColor = System.Drawing.Color.White
@@ -75,7 +76,7 @@ Partial Class YNMessage
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.SteelBlue
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel2.Location = New System.Drawing.Point(0, 171)
@@ -86,7 +87,7 @@ Partial Class YNMessage
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.SteelBlue
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -112,10 +113,10 @@ Partial Class YNMessage
         'btnNo
         '
         Me.btnNo.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnNo.BackColor = System.Drawing.Color.Gray
+        Me.btnNo.BackColor = System.Drawing.Color.White
         Me.btnNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnNo.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.btnNo.ForeColor = System.Drawing.Color.White
+        Me.btnNo.ForeColor = System.Drawing.Color.Black
         Me.btnNo.Location = New System.Drawing.Point(343, 137)
         Me.btnNo.Name = "btnNo"
         Me.btnNo.Size = New System.Drawing.Size(46, 29)

@@ -50,10 +50,10 @@ Partial Class frmSearchCustomer
         Me.panelMain.Controls.Add(Me.panelbl)
         Me.panelMain.Controls.Add(Me.txtSearch)
         Me.panelMain.Controls.Add(Me.panelGv)
-        Me.panelMain.Location = New System.Drawing.Point(15, 95)
-        Me.panelMain.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.panelMain.Location = New System.Drawing.Point(11, 77)
+        Me.panelMain.Margin = New System.Windows.Forms.Padding(2)
         Me.panelMain.Name = "panelMain"
-        Me.panelMain.Size = New System.Drawing.Size(533, 552)
+        Me.panelMain.Size = New System.Drawing.Size(400, 449)
         Me.panelMain.TabIndex = 4
         '
         'panelbl
@@ -62,10 +62,9 @@ Partial Class frmSearchCustomer
         Me.panelbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.panelbl.Controls.Add(Me.lblSearch)
         Me.panelbl.Font = New System.Drawing.Font("Segoe UI", 14.0!)
-        Me.panelbl.Location = New System.Drawing.Point(396, 11)
-        Me.panelbl.Margin = New System.Windows.Forms.Padding(4)
+        Me.panelbl.Location = New System.Drawing.Point(297, 9)
         Me.panelbl.Name = "panelbl"
-        Me.panelbl.Size = New System.Drawing.Size(107, 39)
+        Me.panelbl.Size = New System.Drawing.Size(81, 32)
         Me.panelbl.TabIndex = 45
         '
         'lblSearch
@@ -73,9 +72,8 @@ Partial Class frmSearchCustomer
         Me.lblSearch.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblSearch.Font = New System.Drawing.Font("Segoe UI", 14.0!)
         Me.lblSearch.Location = New System.Drawing.Point(0, 0)
-        Me.lblSearch.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSearch.Name = "lblSearch"
-        Me.lblSearch.Size = New System.Drawing.Size(105, 37)
+        Me.lblSearch.Size = New System.Drawing.Size(79, 30)
         Me.lblSearch.TabIndex = 42
         Me.lblSearch.Text = "Search"
         '
@@ -86,10 +84,10 @@ Partial Class frmSearchCustomer
         Me.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtSearch.Font = New System.Drawing.Font("Segoe UI", 14.0!)
         Me.txtSearch.ForeColor = System.Drawing.Color.Gray
-        Me.txtSearch.Location = New System.Drawing.Point(28, 11)
-        Me.txtSearch.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtSearch.Location = New System.Drawing.Point(21, 9)
+        Me.txtSearch.Margin = New System.Windows.Forms.Padding(2)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(367, 39)
+        Me.txtSearch.Size = New System.Drawing.Size(276, 32)
         Me.txtSearch.TabIndex = 44
         Me.txtSearch.Text = "Search Customer"
         '
@@ -100,10 +98,10 @@ Partial Class frmSearchCustomer
         Me.panelGv.Controls.Add(Me.lblResult)
         Me.panelGv.Controls.Add(Me.gvView)
         Me.panelGv.Font = New System.Drawing.Font("Segoe UI", 15.0!)
-        Me.panelGv.Location = New System.Drawing.Point(3, 57)
-        Me.panelGv.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.panelGv.Location = New System.Drawing.Point(2, 46)
+        Me.panelGv.Margin = New System.Windows.Forms.Padding(2)
         Me.panelGv.Name = "panelGv"
-        Me.panelGv.Size = New System.Drawing.Size(527, 493)
+        Me.panelGv.Size = New System.Drawing.Size(396, 401)
         Me.panelGv.TabIndex = 43
         '
         'lblResult
@@ -111,10 +109,9 @@ Partial Class frmSearchCustomer
         Me.lblResult.AutoSize = True
         Me.lblResult.BackColor = System.Drawing.Color.White
         Me.lblResult.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.lblResult.Location = New System.Drawing.Point(84, 228)
-        Me.lblResult.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblResult.Location = New System.Drawing.Point(63, 185)
         Me.lblResult.Name = "lblResult"
-        Me.lblResult.Size = New System.Drawing.Size(336, 35)
+        Me.lblResult.Size = New System.Drawing.Size(269, 28)
         Me.lblResult.TabIndex = 25
         Me.lblResult.Text = "No Record of Appointment"
         Me.lblResult.Visible = False
@@ -136,13 +133,13 @@ Partial Class frmSearchCustomer
         Me.gvView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.gvView.EnableHeadersVisualStyles = False
         Me.gvView.Location = New System.Drawing.Point(0, 0)
-        Me.gvView.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.gvView.Margin = New System.Windows.Forms.Padding(2)
         Me.gvView.Name = "gvView"
         Me.gvView.ReadOnly = True
         Me.gvView.RowHeadersVisible = False
         Me.gvView.RowTemplate.Height = 24
         Me.gvView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.gvView.Size = New System.Drawing.Size(525, 491)
+        Me.gvView.Size = New System.Drawing.Size(394, 399)
         Me.gvView.TabIndex = 24
         '
         'Column1
@@ -193,6 +190,7 @@ Partial Class frmSearchCustomer
         'Column7
         '
         Me.Column7.HeaderText = ""
+        Me.Column7.LinkColor = System.Drawing.Color.DodgerBlue
         Me.Column7.Name = "Column7"
         Me.Column7.ReadOnly = True
         '
@@ -203,25 +201,25 @@ Partial Class frmSearchCustomer
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 24.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(63, 11)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(47, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(412, 57)
+        Me.Label1.Size = New System.Drawing.Size(329, 45)
         Me.Label1.TabIndex = 17
         Me.Label1.Text = "BROWSE CUSTOMER"
         '
         'frmSearchCustomer
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(563, 661)
+        Me.ClientSize = New System.Drawing.Size(422, 537)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.panelMain)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmSearchCustomer"
+        Me.Sizable = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.panelMain.ResumeLayout(False)
         Me.panelMain.PerformLayout()
@@ -242,11 +240,11 @@ Partial Class frmSearchCustomer
     Friend WithEvents lblResult As Label
     Friend WithEvents gvView As DataGridView
     Friend WithEvents Label1 As Label
-    Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As System.Windows.Forms.DataGridViewLinkColumn
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewLinkColumn
 End Class

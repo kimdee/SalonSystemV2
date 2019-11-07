@@ -34,6 +34,7 @@ Partial Class ErrorMessage
         '
         'panelMain
         '
+        Me.panelMain.BackColor = System.Drawing.Color.White
         Me.panelMain.Controls.Add(Me.lblMsg)
         Me.panelMain.Controls.Add(Me.Panel2)
         Me.panelMain.Controls.Add(Me.Panel1)

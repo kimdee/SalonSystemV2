@@ -44,7 +44,9 @@ Partial Class frmPayroll
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column9 = New System.Windows.Forms.DataGridViewLinkColumn()
+        Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column11 = New System.Windows.Forms.DataGridViewLinkColumn()
         Me.panelMain.SuspendLayout()
         Me.panelContainer.SuspendLayout()
         Me.panelGv.SuspendLayout()
@@ -62,7 +64,7 @@ Partial Class frmPayroll
         Me.panelMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.panelMain.Controls.Add(Me.panelContainer)
         Me.panelMain.Location = New System.Drawing.Point(3, 66)
-        Me.panelMain.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.panelMain.Margin = New System.Windows.Forms.Padding(2)
         Me.panelMain.Name = "panelMain"
         Me.panelMain.Size = New System.Drawing.Size(945, 540)
         Me.panelMain.TabIndex = 4
@@ -76,7 +78,7 @@ Partial Class frmPayroll
         Me.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panelContainer.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.panelContainer.Location = New System.Drawing.Point(0, 0)
-        Me.panelContainer.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.panelContainer.Margin = New System.Windows.Forms.Padding(2)
         Me.panelContainer.Name = "panelContainer"
         Me.panelContainer.Size = New System.Drawing.Size(943, 538)
         Me.panelContainer.TabIndex = 28
@@ -87,7 +89,7 @@ Partial Class frmPayroll
         Me.panelGv.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panelGv.Font = New System.Drawing.Font("Segoe UI", 15.0!)
         Me.panelGv.Location = New System.Drawing.Point(0, 50)
-        Me.panelGv.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.panelGv.Margin = New System.Windows.Forms.Padding(2)
         Me.panelGv.Name = "panelGv"
         Me.panelGv.Size = New System.Drawing.Size(941, 486)
         Me.panelGv.TabIndex = 27
@@ -105,11 +107,11 @@ Partial Class frmPayroll
         Me.gvView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.gvView.ColumnHeadersHeight = 35
         Me.gvView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.gvView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7, Me.Column8, Me.Column9})
+        Me.gvView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7, Me.Column8, Me.Column9, Me.Column10, Me.Column11})
         Me.gvView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.gvView.EnableHeadersVisualStyles = False
         Me.gvView.Location = New System.Drawing.Point(0, 0)
-        Me.gvView.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.gvView.Margin = New System.Windows.Forms.Padding(2)
         Me.gvView.Name = "gvView"
         Me.gvView.ReadOnly = True
         Me.gvView.RowHeadersVisible = False
@@ -129,7 +131,7 @@ Partial Class frmPayroll
         Me.panelTop.Controls.Add(Me.txtSearch)
         Me.panelTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.panelTop.Location = New System.Drawing.Point(0, 0)
-        Me.panelTop.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.panelTop.Margin = New System.Windows.Forms.Padding(2)
         Me.panelTop.Name = "panelTop"
         Me.panelTop.Size = New System.Drawing.Size(941, 50)
         Me.panelTop.TabIndex = 26
@@ -141,7 +143,7 @@ Partial Class frmPayroll
         Me.btnGeneratePayroll.Font = New System.Drawing.Font("Segoe UI", 17.0!)
         Me.btnGeneratePayroll.ForeColor = System.Drawing.Color.Black
         Me.btnGeneratePayroll.Location = New System.Drawing.Point(7, 5)
-        Me.btnGeneratePayroll.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnGeneratePayroll.Margin = New System.Windows.Forms.Padding(2)
         Me.btnGeneratePayroll.Name = "btnGeneratePayroll"
         Me.btnGeneratePayroll.Size = New System.Drawing.Size(229, 39)
         Me.btnGeneratePayroll.TabIndex = 56
@@ -155,7 +157,7 @@ Partial Class frmPayroll
         Me.DateTimePicker2.Font = New System.Drawing.Font("Segoe UI", 14.0!)
         Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DateTimePicker2.Location = New System.Drawing.Point(475, 8)
-        Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(2)
         Me.DateTimePicker2.Name = "DateTimePicker2"
         Me.DateTimePicker2.Size = New System.Drawing.Size(133, 32)
         Me.DateTimePicker2.TabIndex = 55
@@ -178,7 +180,7 @@ Partial Class frmPayroll
         Me.DateTimePicker1.Font = New System.Drawing.Font("Segoe UI", 14.0!)
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DateTimePicker1.Location = New System.Drawing.Point(301, 8)
-        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(2)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(133, 32)
         Me.DateTimePicker1.TabIndex = 54
@@ -224,7 +226,7 @@ Partial Class frmPayroll
         Me.txtSearch.Font = New System.Drawing.Font("Segoe UI", 14.0!)
         Me.txtSearch.ForeColor = System.Drawing.Color.Gray
         Me.txtSearch.Location = New System.Drawing.Point(612, 8)
-        Me.txtSearch.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtSearch.Margin = New System.Windows.Forms.Padding(2)
         Me.txtSearch.Name = "txtSearch"
         Me.txtSearch.Size = New System.Drawing.Size(245, 32)
         Me.txtSearch.TabIndex = 44
@@ -297,9 +299,21 @@ Partial Class frmPayroll
         '
         'Column9
         '
-        Me.Column9.HeaderText = ""
+        Me.Column9.HeaderText = "Date"
         Me.Column9.Name = "Column9"
         Me.Column9.ReadOnly = True
+        '
+        'Column10
+        '
+        Me.Column10.HeaderText = "Time"
+        Me.Column10.Name = "Column10"
+        Me.Column10.ReadOnly = True
+        '
+        'Column11
+        '
+        Me.Column11.HeaderText = ""
+        Me.Column11.Name = "Column11"
+        Me.Column11.ReadOnly = True
         '
         'frmPayroll
         '
@@ -309,7 +323,7 @@ Partial Class frmPayroll
         Me.ClientSize = New System.Drawing.Size(950, 609)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.panelMain)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmPayroll"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -347,5 +361,7 @@ Partial Class frmPayroll
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
     Friend WithEvents Column7 As DataGridViewTextBoxColumn
     Friend WithEvents Column8 As DataGridViewTextBoxColumn
-    Friend WithEvents Column9 As DataGridViewLinkColumn
+    Friend WithEvents Column9 As DataGridViewTextBoxColumn
+    Friend WithEvents Column10 As DataGridViewTextBoxColumn
+    Friend WithEvents Column11 As DataGridViewLinkColumn
 End Class

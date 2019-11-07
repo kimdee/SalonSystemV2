@@ -94,7 +94,7 @@ Public Class Accounts
     Public Sub SetAccountDetails(id As Integer)
         Try
             Dim sql As String
-            sql = "SELECT * FROM Account WHERE acctID = " & id & ";"
+            sql = "SELECT * FROM Account WHERE accountID = " & id & ";"
             If IsConnected() = True Then
                 Dim cmd = New MySqlCommand(sql, getServerConnection)
                 Dim reader As MySqlDataReader = cmd.ExecuteReader()
@@ -132,7 +132,7 @@ Public Class Accounts
     Public Function EditAccount() As Boolean
         Try
             Dim bool As Boolean = False
-            Dim sql As String = "UPDATE Account SET firstname=@0,lastname=@1, usertype=@2,UserName=@3,Password=@4,status=@5 Where acctid = @6;"
+            Dim sql As String = "UPDATE Account SET firstname=@0,lastname=@1, usertype=@2,UserName=@3,Password=@4,status=@5 Where accountID = @6;"
             If IsConnected() = True Then
                 ServerExecuteSQL(sql, FirstName, LastName, AccountRole, UserName, Password, LoginStatus, AccountID)
                 Commit()
@@ -148,7 +148,7 @@ Public Class Accounts
     Public Function DeleteAccount() As Boolean
         Try
             Dim bool As Boolean = False
-            Dim sql As String = "DELETE FROM Account WHERE acctID= @0;"
+            Dim sql As String = "DELETE FROM Account WHERE accountID= @0;"
             If IsConnected() = True Then
                 ServerExecuteSQL(sql, AccountID)
                 Commit()
@@ -164,7 +164,7 @@ Public Class Accounts
         Try
             Dim sql As String
             Dim i As Integer = 0
-            sql = "SELECT * FROM Account WHERE (firstname LIKE '" & kw & "%' or lastname LIKE '" & kw & "%') and acctid <> " & frmMain.UserID & " ORDER BY firstname,lastname DESC;"
+            sql = "SELECT * FROM Account WHERE (firstname LIKE '" & kw & "%' or lastname LIKE '" & kw & "%') and accountID <> " & frmMain.UserID & " ORDER BY firstname,lastname DESC;"
             If IsConnected() = True Then
                 Dim cmd = New MySqlCommand(sql, getServerConnection)
                 Dim reader As MySqlDataReader = cmd.ExecuteReader()
@@ -232,6 +232,19 @@ Public Class Accounts
     End Function
 
     ''----VALIDATION-----
+    Public Function IsCountAccount() As Integer
+        Try
+            Dim sql As String
+            sql = "SELECT COUNT(accountID) FROM account;"
+            If IsConnected() = True Then
+                Dim cmd = New MySqlCommand(sql, getServerConnection)
+                Dim reader As MySqlDataReader = cmd.ExecuteReader()
+            End If
+        Catch ex As Exception
+            Return True
+        End Try
+    End Function
+
     Public Function ValidateUserName(cnt As String) As Boolean
         Try
             Dim sql As String
@@ -259,7 +272,7 @@ Public Class Accounts
             Dim sql As String
             Dim bool As Boolean
             Dim i As Integer = 0
-            sql = "SELECT Password From Account Where '" & cnt & "' = Password and acctid = '" & frmMain.UserID & "';"
+            sql = "SELECT Password From Account Where '" & cnt & "' = Password and accountID = '" & frmMain.UserID & "';"
             If IsConnected() = True Then
                 Dim cmd = New MySqlCommand(sql, getServerConnection)
                 Dim reader As MySqlDataReader = cmd.ExecuteReader()
@@ -299,7 +312,6 @@ Public Class Accounts
 
 
     ''---LOGIN-------
-
     Public Function IsLogin(n As String, pw As String) As Boolean
         Try
             Dim bool As Boolean = False
@@ -333,7 +345,7 @@ Public Class Accounts
                 Dim cmd = New MySqlCommand(sql, getServerConnection)
                 Dim reader As MySqlDataReader = cmd.ExecuteReader()
                 While reader.Read()
-                    loginid = (reader("acctid"))
+                    loginid = (reader("accountID"))
 
                     frmMain.UserID = loginid
                 End While
@@ -378,7 +390,7 @@ Public Class Accounts
                 i = 0
             End If
             Dim bool As Boolean = False
-            Dim sql As String = "UPDATE Account SET Status=@0 WHERE Acctid = @1;"
+            Dim sql As String = "UPDATE Account SET Status=@0 WHERE accountID=@1;"
             If IsConnected() = True Then
                 ServerExecuteSQL(sql, i, loginid)
                 Commit()
@@ -395,7 +407,7 @@ Public Class Accounts
         Try
 
             Dim bool As Boolean = False
-            Dim sql As String = "UPDATE Account SET  Password =@0 WHERE Acctid = @1 and Password = @2;"
+            Dim sql As String = "UPDATE Account SET Password=@0 WHERE Acctid =@1 and Password=@2;"
             If IsConnected() = True Then
                 ServerExecuteSQL(sql, str, frmMain.UserID, ctr)
                 Commit()

@@ -29,7 +29,6 @@ Partial Class frmBrowseEmployee
         Me.panelGv = New System.Windows.Forms.Panel()
         Me.lblResult = New System.Windows.Forms.Label()
         Me.gvView = New System.Windows.Forms.DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column8 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -38,6 +37,7 @@ Partial Class frmBrowseEmployee
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column7 = New System.Windows.Forms.DataGridViewLinkColumn()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.panelMain.SuspendLayout()
         Me.panelbl.SuspendLayout()
         Me.panelGv.SuspendLayout()
@@ -50,10 +50,10 @@ Partial Class frmBrowseEmployee
         Me.panelMain.Controls.Add(Me.panelbl)
         Me.panelMain.Controls.Add(Me.txtSearch)
         Me.panelMain.Controls.Add(Me.panelGv)
-        Me.panelMain.Location = New System.Drawing.Point(15, 95)
-        Me.panelMain.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.panelMain.Location = New System.Drawing.Point(11, 77)
+        Me.panelMain.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.panelMain.Name = "panelMain"
-        Me.panelMain.Size = New System.Drawing.Size(533, 553)
+        Me.panelMain.Size = New System.Drawing.Size(400, 449)
         Me.panelMain.TabIndex = 4
         '
         'panelbl
@@ -62,10 +62,9 @@ Partial Class frmBrowseEmployee
         Me.panelbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.panelbl.Controls.Add(Me.lblSearch)
         Me.panelbl.Font = New System.Drawing.Font("Segoe UI", 14.0!)
-        Me.panelbl.Location = New System.Drawing.Point(399, 11)
-        Me.panelbl.Margin = New System.Windows.Forms.Padding(4)
+        Me.panelbl.Location = New System.Drawing.Point(299, 9)
         Me.panelbl.Name = "panelbl"
-        Me.panelbl.Size = New System.Drawing.Size(107, 39)
+        Me.panelbl.Size = New System.Drawing.Size(81, 32)
         Me.panelbl.TabIndex = 45
         '
         'lblSearch
@@ -73,9 +72,8 @@ Partial Class frmBrowseEmployee
         Me.lblSearch.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblSearch.Font = New System.Drawing.Font("Segoe UI", 14.0!)
         Me.lblSearch.Location = New System.Drawing.Point(0, 0)
-        Me.lblSearch.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSearch.Name = "lblSearch"
-        Me.lblSearch.Size = New System.Drawing.Size(105, 37)
+        Me.lblSearch.Size = New System.Drawing.Size(79, 30)
         Me.lblSearch.TabIndex = 42
         Me.lblSearch.Text = "Search"
         '
@@ -86,10 +84,10 @@ Partial Class frmBrowseEmployee
         Me.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtSearch.Font = New System.Drawing.Font("Segoe UI", 14.0!)
         Me.txtSearch.ForeColor = System.Drawing.Color.Gray
-        Me.txtSearch.Location = New System.Drawing.Point(31, 11)
-        Me.txtSearch.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtSearch.Location = New System.Drawing.Point(23, 9)
+        Me.txtSearch.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(367, 39)
+        Me.txtSearch.Size = New System.Drawing.Size(276, 32)
         Me.txtSearch.TabIndex = 44
         Me.txtSearch.Text = "Search Employee"
         '
@@ -100,10 +98,10 @@ Partial Class frmBrowseEmployee
         Me.panelGv.Controls.Add(Me.lblResult)
         Me.panelGv.Controls.Add(Me.gvView)
         Me.panelGv.Font = New System.Drawing.Font("Segoe UI", 15.0!)
-        Me.panelGv.Location = New System.Drawing.Point(3, 57)
-        Me.panelGv.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.panelGv.Location = New System.Drawing.Point(2, 46)
+        Me.panelGv.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.panelGv.Name = "panelGv"
-        Me.panelGv.Size = New System.Drawing.Size(527, 493)
+        Me.panelGv.Size = New System.Drawing.Size(396, 401)
         Me.panelGv.TabIndex = 43
         '
         'lblResult
@@ -111,10 +109,9 @@ Partial Class frmBrowseEmployee
         Me.lblResult.AutoSize = True
         Me.lblResult.BackColor = System.Drawing.Color.White
         Me.lblResult.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.lblResult.Location = New System.Drawing.Point(105, 228)
-        Me.lblResult.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblResult.Location = New System.Drawing.Point(79, 185)
         Me.lblResult.Name = "lblResult"
-        Me.lblResult.Size = New System.Drawing.Size(292, 35)
+        Me.lblResult.Size = New System.Drawing.Size(236, 28)
         Me.lblResult.TabIndex = 25
         Me.lblResult.Text = "No Record of Employee"
         Me.lblResult.Visible = False
@@ -136,28 +133,14 @@ Partial Class frmBrowseEmployee
         Me.gvView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.gvView.EnableHeadersVisualStyles = False
         Me.gvView.Location = New System.Drawing.Point(0, 0)
-        Me.gvView.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.gvView.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.gvView.Name = "gvView"
         Me.gvView.ReadOnly = True
         Me.gvView.RowHeadersVisible = False
         Me.gvView.RowTemplate.Height = 24
         Me.gvView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.gvView.Size = New System.Drawing.Size(525, 491)
+        Me.gvView.Size = New System.Drawing.Size(394, 399)
         Me.gvView.TabIndex = 24
-        '
-        'Label1
-        '
-        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 24.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(71, 11)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(397, 57)
-        Me.Label1.TabIndex = 17
-        Me.Label1.Text = "BROWSE EMPLOYEE"
         '
         'Column1
         '
@@ -217,15 +200,27 @@ Partial Class frmBrowseEmployee
         Me.Column7.Name = "Column7"
         Me.Column7.ReadOnly = True
         '
+        'Label1
+        '
+        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 24.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(53, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(317, 45)
+        Me.Label1.TabIndex = 17
+        Me.Label1.Text = "BROWSE EMPLOYEE"
+        '
         'frmBrowseEmployee
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(563, 661)
+        Me.ClientSize = New System.Drawing.Size(422, 537)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.panelMain)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.Name = "frmBrowseEmployee"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent

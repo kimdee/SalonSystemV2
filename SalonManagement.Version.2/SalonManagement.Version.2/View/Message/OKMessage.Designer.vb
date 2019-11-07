@@ -35,7 +35,7 @@ Partial Class OKMessage
         'btnOK
         '
         Me.btnOK.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnOK.BackColor = System.Drawing.Color.SeaGreen
+        Me.btnOK.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnOK.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold)
         Me.btnOK.ForeColor = System.Drawing.Color.White
@@ -48,7 +48,7 @@ Partial Class OKMessage
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.SeaGreen
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -73,7 +73,7 @@ Partial Class OKMessage
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.SeaGreen
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel2.Location = New System.Drawing.Point(0, 171)

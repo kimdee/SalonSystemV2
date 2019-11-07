@@ -11,8 +11,10 @@ Public Class frmMain
 
     Private account As New Accounts
     Private customer As New Customer
+    Private employee As New Employee
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        timeMain.Start()
         Me.Hide()
         Dim obj As New frmLogin
         If obj.ShowDialog = System.Windows.Forms.DialogResult.OK Then
@@ -39,14 +41,10 @@ Public Class frmMain
             If IsConnected() = True Then
                 Dim cmd = New MySqlCommand(sql, getServerConnection)
                 dtServer = cmd.ExecuteScalar
-                LinkLabel10.Text = fullName
-
+                lnklblUsername.Text = fullName
                 'lbluserType.Text = userType
-                'lblDate.Text = dtServer.ToShortDateString
-
-                lblTime.Text = dtServer.ToString("hh:mm:ss tt")
-
-
+                lblTime.Text = TimeOfDay.ToString("h:mm:ss tt")
+                lblDate.Text = dtServer.ToString("MMMM d, yyyy")
                 'lblDate.Text = MonthName(dtServer.Month) + " " + dtServer.Day.ToString() + ", " + dtServer.Year.ToString()
 
             End If
@@ -139,4 +137,5 @@ Public Class frmMain
         Dim obj As New frmLogin
         obj.ShowDialog()
     End Sub
+
 End Class

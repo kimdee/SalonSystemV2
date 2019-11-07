@@ -200,6 +200,7 @@ Partial Class frmSearchAppointment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(422, 537)
         Me.Controls.Add(Me.Label1)
@@ -207,6 +208,7 @@ Partial Class frmSearchAppointment
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmSearchAppointment"
+        Me.Sizable = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.panelMain.ResumeLayout(False)
         Me.panelMain.PerformLayout()

@@ -72,6 +72,26 @@ Public Class Payroll
         End Get
     End Property
 
+    Private _payrollDate As String = ""
+    Public Property PayrollDate As String
+        Set(value As String)
+            _payrollDate = value
+        End Set
+        Get
+            Return _payrollDate
+        End Get
+    End Property
+
+    Private _payrollTime As String = ""
+    Public Property PayrollTime As String
+        Set(value As String)
+            _payrollTime = value
+        End Set
+        Get
+            Return _payrollTime
+        End Get
+    End Property
+
     Public Sub SetPayrollDetails(id As Integer)
         Try
             Dim sql As String
@@ -87,6 +107,8 @@ Public Class Payroll
                     PayrollOvertime = reader(4)
                     PayrollGrossPay = reader(5)
                     PayrollNetPay = reader(6)
+                    PayrollDate = reader(7)
+                    PayrollTime = reader(8)
                 End While
                 reader.Close()
             End If
@@ -97,9 +119,9 @@ Public Class Payroll
     Public Function AddPayroll() As Boolean
         Try
             Dim bool As Boolean = False
-            Dim sql As String = "INSERT INTO Payroll (employeeID,deductionID,payrollCommission,payrollOvertime,payrollGrossPay,payrollNetPay) VALUES (@0,@1,@2,@3,@4,@5);"
+            Dim sql As String = "INSERT INTO Payroll (employeeID,deductionID,payrollCommission,payrollOvertime,payrollGrossPay,payrollNetPay,payrollDate,payrollTime) VALUES (@0,@1,@2,@3,@4,@5,@6,@7);"
             If IsConnected() = True Then
-                ServerExecuteSQL(sql, EmployeeID, DeductionID, PayrollCommission, PayrollOvertime, PayrollGrossPay, PayrollNetPay)
+                ServerExecuteSQL(sql, EmployeeID, DeductionID, PayrollCommission, PayrollOvertime, PayrollGrossPay, PayrollNetPay, PayrollDate, PayrollTime)
                 Commit()
                 bool = True
             End If
@@ -114,9 +136,9 @@ Public Class Payroll
     Public Function EditPayroll() As Boolean
         Try
             Dim bool As Boolean = False
-            Dim sql As String = "UPDATE Payroll SET employeeID=@0, deductionID=@1, payrollCommission=@2, payrollOvertime=@3, payrollGrossPay=@4, payrollNetPay=@5 WHERE payrollID=@6;"
+            Dim sql As String = "UPDATE Payroll SET employeeID=@0, deductionID=@1, payrollCommission=@2, payrollOvertime=@3, payrollGrossPay=@4, payrollNetPay=@5, payrollDate=@6, payrollTime=@7 WHERE payrollID=@8;"
             If IsConnected() = True Then
-                ServerExecuteSQL(sql, EmployeeID, DeductionID, PayrollCommission, PayrollOvertime, PayrollGrossPay, PayrollNetPay, PayrollID)
+                ServerExecuteSQL(sql, EmployeeID, DeductionID, PayrollCommission, PayrollOvertime, PayrollGrossPay, PayrollNetPay, PayrollDate, PayrollTime, PayrollID)
                 Commit()
                 bool = True
             End If
@@ -155,7 +177,7 @@ Public Class Payroll
                 While reader.Read()
                     i = i + 1
                     With gv
-                        .Rows.Add(reader(0), i, reader("employeeLName") + ", " + reader("employeeFName") + " " + reader("employeeMName"), reader(2), reader(3), reader(4), reader(5), reader(6), "Delete")
+                        .Rows.Add(reader(0), i, reader("employeeLName") + ", " + reader("employeeFName") + " " + reader("employeeMName"), reader(2), reader(3), reader(4), reader(5), reader(6), reader(7), reader(8), "Delete")
                     End With
                 End While
                 reader.Close()

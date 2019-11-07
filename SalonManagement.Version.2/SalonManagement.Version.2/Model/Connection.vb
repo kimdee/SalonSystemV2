@@ -58,6 +58,7 @@ Module Connection
         End Try
     End Function
 
+
     'This is use to execute add,edit and delete query.
     Public Sub ServerExecuteSQL(sql As String, ParamArray obj() As Object)
         Dim cmd As New MySqlCommand(sql, Connection, Transaction)

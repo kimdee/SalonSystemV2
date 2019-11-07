@@ -5,12 +5,24 @@ Public Class frmEditAccount
 
     Dim role As String = "clerk"
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
-        If IsTextBoxEmpty(txtName, txtPw, txtUserName) = True Or cboType.SelectedIndex = -1 Then
+        If IsTextBoxEmpty(txtName, txtPw, txtUserName) = True Or cboPosition.SelectedIndex = -1 Then
             MessageBox.Show("Name, User Name, Password and Position are required.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        ElseIf txtUserName.TextLength < 6 Then
+            MessageBox.Show("Username must be atleast 6 characters long.", "Message",
+                           MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        ElseIf txtPw.TextLength < 6 Then
+            MessageBox.Show("Password must be atleast 6 characters long.", "Message",
+                           MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        ElseIf txtPw.Text <> txtRetype.Text Then
+            MessageBox.Show("Password did not match.", "Message",
+                           MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        ElseIf IsTextBoxEmpty(txtRetype) = True Or cboPosition.SelectedIndex = -1 Then
+            MessageBox.Show("Please Retype Password.", "Message",
+                            MessageBoxButtons.OK, MessageBoxIcon.Warning)
         Else
             account.FirstName = txtName.Text
             account.LastName = txtLastName.Text
-            account.AccountRole = cboType.Text
+            account.AccountRole = cboPosition.Text
             account.UserName = txtUserName.Text
             account.Password = txtPw.Text
             account.LoginStatus = 0
@@ -30,16 +42,18 @@ Public Class frmEditAccount
 
     Private Sub txtName_TextChanged(sender As Object, e As EventArgs) Handles txtName.TextChanged
         AllowedOnly(LetterOnly, txtName)
-        ToUpperOnly(CodeOnly, txtName)
+        ToUpperOnly(LetterOnly, txtName)
+        txtName.MaxLength = 15
     End Sub
 
     Private Sub txtLastName_TextChanged(sender As Object, e As EventArgs) Handles txtLastName.TextChanged
         AllowedOnly(LetterOnly, txtLastName)
-        ToUpperOnly(CodeOnly, txtLastName)
+        ToUpperOnly(LetterOnly, txtLastName)
+        txtLastName.MaxLength = 15
     End Sub
 
-    Private Sub cboType_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboType.SelectedIndexChanged
-        Me.role = cboType.Text
+    Private Sub cboType_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboPosition.SelectedIndexChanged
+        Me.role = cboPosition.Text
     End Sub
 
     Private Sub frmEditAccount_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -47,13 +61,27 @@ Public Class frmEditAccount
             txtName.Text = .FirstName
             txtLastName.Text = .LastName
             If .AccountRole = "Administrator" Then
-                cboType.Enabled = False
+                cboPosition.Enabled = False
             Else
-                cboType.SelectedIndex = cboType.FindString(.AccountRole)
+                cboPosition.SelectedIndex = cboPosition.FindString(.AccountRole)
             End If
             txtUserName.Text = .UserName
             txtPw.Text = .Password
         End With
     End Sub
 
+    Private Sub txtUserName_TextChanged(sender As Object, e As EventArgs) Handles txtUserName.TextChanged
+        AllowedOnly("ñabcdefghijklmnopqrstuvwxyzÑ1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ-_", txtUserName)
+        txtUserName.MaxLength = 15
+    End Sub
+
+    Private Sub txtPw_TextChanged(sender As Object, e As EventArgs) Handles txtPw.TextChanged
+        AllowedOnly("ñabcdefghijklmnopqrstuvwxyzÑ1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ-_", txtPw)
+        txtPw.MaxLength = 20
+    End Sub
+
+    Private Sub txtRetype_TextChanged(sender As Object, e As EventArgs) Handles txtRetype.TextChanged
+        AllowedOnly("ñabcdefghijklmnopqrstuvwxyzÑ1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ-_", txtRetype)
+        txtRetype.MaxLength = 20
+    End Sub
 End Class

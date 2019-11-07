@@ -1,20 +1,21 @@
 ﻿Public Class frmAddAccount
-    Private col As New Accounts
+    Private acc As New Accounts
     Dim role As String = "Clerk"
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
-        Me.DialogResult = DialogResult.Cancel
         Me.Close()
     End Sub
 
     Private Sub txtName_TextChanged(sender As Object, e As EventArgs) Handles txtName.TextChanged
         AllowedOnly(LetterOnly, txtName)
         SentenceCase(txtName)
+        txtName.MaxLength = 15
     End Sub
 
     Private Sub txtLastName_TextChanged(sender As Object, e As EventArgs) Handles txtLastName.TextChanged
         AllowedOnly(LetterOnly, txtLastName)
         SentenceCase(txtLastName)
+        txtLastName.MaxLength = 15
     End Sub
 
     Private Sub cboPosition_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboPosition.SelectedIndexChanged
@@ -28,13 +29,19 @@
         'End If
     End Sub
 
-
     Private Sub txtUserName_TextChanged(sender As Object, e As EventArgs) Handles txtUserName.TextChanged
         AllowedOnly("ñabcdefghijklmnopqrstuvwxyzÑ1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ-_", txtUserName)
+        txtUserName.MaxLength = 15
     End Sub
 
     Private Sub txtPw_TextChanged(sender As Object, e As EventArgs) Handles txtPw.TextChanged
         AllowedOnly("ñabcdefghijklmnopqrstuvwxyzÑ1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ-_", txtPw)
+        txtPw.MaxLength = 20
+    End Sub
+
+    Private Sub txtRetype_TextChanged(sender As Object, e As EventArgs) Handles txtRetype.TextChanged
+        AllowedOnly("ñabcdefghijklmnopqrstuvwxyzÑ1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ-_", txtRetype)
+        txtRetype.MaxLength = 20
     End Sub
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
@@ -44,7 +51,7 @@
         ElseIf txtUserName.TextLength < 6 Then
             MessageBox.Show("Username must be atleast 6 characters long.", "Message",
                            MessageBoxButtons.OK, MessageBoxIcon.Warning)
-        ElseIf col.IsAccountExist(txtUserName.Text) Then
+        ElseIf acc.IsAccountExist(txtUserName.Text) Then
             MessageBox.Show("Username already exist.", "Message",
                            MessageBoxButtons.OK, MessageBoxIcon.Warning)
         ElseIf txtPw.TextLength < 6 Then
@@ -61,13 +68,13 @@
                             MessageBoxButtons.OK, MessageBoxIcon.Warning)
         Else
 
-            col.FirstName = txtName.Text.Trim
-            col.LastName = txtLastName.Text.Trim
-            col.AccountRole = cboPosition.Text.Trim
-            col.UserName = txtUserName.Text.Trim
-            col.Password = txtPw.Text.Trim
-            col.LoginStatus = 0
-            If col.AddAccount = True Then
+            acc.FirstName = txtName.Text.Trim
+            acc.LastName = txtLastName.Text.Trim
+            acc.AccountRole = cboPosition.Text.Trim
+            acc.UserName = txtUserName.Text.Trim
+            acc.Password = txtPw.Text.Trim
+            acc.LoginStatus = 0
+            If acc.AddAccount = True Then
                 MessageBox.Show("Successfully Saved.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Me.DialogResult = DialogResult.OK
                 Me.Close()
@@ -76,4 +83,10 @@
             End If
         End If
     End Sub
+
+    Private Sub frmAddAccount_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        cboPosition.SelectedIndex = 0
+    End Sub
+
+
 End Class

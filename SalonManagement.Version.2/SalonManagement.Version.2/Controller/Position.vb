@@ -53,7 +53,7 @@ Public Class Position
         End Get
     End Property
 
-    Public Sub SetServiceDetails(id As Integer)
+    Public Sub SetPositionDetails(id As Integer)
         Try
             Dim sql As String
             sql = "SELECT * FROM Position WHERE positionID = " & id & ";"
@@ -157,7 +157,7 @@ Public Class Position
     Public Sub LoadPositionToCBO(cbo As ComboBox)
         Try
             Dim sql As String
-            sql = "SELECT *  FROM Position ORDER BY positionName ASC;"
+            sql = "SELECT * FROM Position ORDER BY positionID ASC;"
             If IsConnected() = True Then
                 Dim cmd = New MySqlCommand(sql, getServerConnection)
                 Dim reader As MySqlDataReader = cmd.ExecuteReader()
@@ -168,6 +168,45 @@ Public Class Position
                 reader.Close()
             End If
         Catch ex As Exception
+
+        End Try
+    End Sub
+    Public Sub LoadPositionCboTextBox(cbo As ComboBox, txtStandardPay As TextBox, txtOT As TextBox, txtBasicPay As TextBox)
+        Try
+            Dim sql As String
+            sql = "SELECT * FROM Position WHERE positionName='" & cbo.Text & "'"
+            If IsConnected() = True Then
+                Dim cmd = New MySqlCommand(sql, getServerConnection)
+                Dim reader As MySqlDataReader = cmd.ExecuteReader()
+                While reader.Read()
+                    cbo.Items.Add(reader(1))
+                    txtStandardPay.Text = reader(2)
+                    txtOT.Text = reader(3)
+                    txtBasicPay.Text = reader(4)
+                End While
+                reader.Close()
+            End If
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Public Sub LoadPositionTextBox(txtPosition As TextBox, txtStandardPay As TextBox, txtOT As TextBox, txtBasicPay As TextBox)
+        Try
+            Dim sql As String
+            sql = "SELECT * FROM Position WHERE positionName='" & txtPosition.Text & "'"
+            If IsConnected() = True Then
+                Dim cmd = New MySqlCommand(sql, getServerConnection)
+                Dim reader As MySqlDataReader = cmd.ExecuteReader()
+                While reader.Read()
+                    txtStandardPay.Text = reader(2)
+                    txtOT.Text = reader(3)
+                    txtBasicPay.Text = reader(4)
+                End While
+                reader.Close()
+            End If
+        Catch ex As Exception
+
         End Try
     End Sub
 End Class

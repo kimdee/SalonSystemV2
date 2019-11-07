@@ -21,7 +21,7 @@
 
     End Sub
 
-    Private Sub btnEdit_Click_1(sender As Object, e As EventArgs) Handles btnEdit.Click
+    Private Sub btnEdit_Click_1(sender As Object, e As EventArgs)
         Try
             ''Edit CustomerTable
             With customer
@@ -73,19 +73,19 @@
         End Try
     End Sub
 
-    Private Sub btnClose_Click_1(sender As Object, e As EventArgs) Handles btnClose.Click
+    Private Sub btnClose_Click_1(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
 
-    Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
+    Private Sub btnSearch_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub btnAddservice_Click(sender As Object, e As EventArgs) Handles btnAddservice.Click
+    Private Sub btnAddservice_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub btnPayments_Click(sender As Object, e As EventArgs) Handles btnPayments.Click
+    Private Sub btnPayments_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class

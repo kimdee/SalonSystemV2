@@ -1,6 +1,7 @@
 ﻿Public Class frmAddEmployeePayroll
     Private employee As New Employee
     Private deduction As New Deduction
+    Private position As New Position
 
     Private Sub frmAddEmployeePayroll_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         employee.SelectEmployee(gvViewEmployee)
@@ -46,9 +47,24 @@
             If gvViewEmployee.SelectedRows(0).Cells(1).Value = False Then
                 gvViewEmployee.SelectedRows(0).Cells(1).Value = True
                 txtPosition.Text = gvViewEmployee.SelectedRows(0).Cells(5).Value.ToString
+                position.LoadPositionTextBox(txtPosition, txtStandardPay, txtOvertime, txtBasicPay)
             Else
                 gvViewEmployee.SelectedRows(0).Cells(1).Value = False
+                txtPosition.Text = ""
             End If
         End If
     End Sub
+
+    Private Sub txtPosition_TextChanged(sender As Object, e As EventArgs)
+        position.LoadPositionTextBox(txtPosition, txtStandardPay, txtOvertime, txtBasicPay)
+    End Sub
+
+    Private Sub txtBasicPay_TextChanged(sender As Object, e As EventArgs) Handles txtBasicPay.TextChanged
+        txtGrossPay.Text = Val(txtBasicPay.Text) + Val(txtOvertime.Text)
+    End Sub
+
+    Private Sub txtTotalDeduction_TextChanged(sender As Object, e As EventArgs) Handles txtTotalDeduction.TextChanged
+        txtNetpay.Text = Val(txtGrossPay.Text) - Val(txtTotalDeduction.Text)
+    End Sub
+
 End Class

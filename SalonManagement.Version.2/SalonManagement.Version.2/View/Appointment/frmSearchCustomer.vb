@@ -42,4 +42,5 @@ Public Class frmSearchCustomer
             'customer.FilterCustomer(txtSearch.Text, gvView, lblResult)
         End If
     End Sub
+
 End Class
